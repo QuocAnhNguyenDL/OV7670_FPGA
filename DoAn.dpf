@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pin_planner>
+	<pin_info>
+		<pin name="GPIO_0[0]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[1]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[2]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[3]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[4]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[5]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[6]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[7]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[8]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[9]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[10]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[11]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[12]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[13]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[14]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[15]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[16]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[17]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[18]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[19]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[20]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[21]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[22]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[23]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[24]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[25]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[26]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[27]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[28]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[29]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[30]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[31]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[32]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[33]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[34]" source="Pin Planner" >
+		</pin>
+		<pin name="GPIO_0[35]" source="Pin Planner" >
+		</pin>
+	</pin_info>
+	<buses>
+	</buses>
+	<group_file_association>
+	</group_file_association>
+	<pin_planner_file_specifies>
+	</pin_planner_file_specifies>
+</pin_planner>

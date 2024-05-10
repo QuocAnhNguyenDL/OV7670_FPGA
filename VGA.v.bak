@@ -1,0 +1,50 @@
+module VGA
+(  	
+	//global clock
+	input					clk,			
+	input					rst_n,     		
+	
+	//vga interface
+	output				vga_dclk,   	
+	output				vga_blank,		
+	output				vga_sync,		
+	output				vga_hs,	    	
+	output				vga_vs,	    	
+	output				vga_en,			
+	output	[15:0]	vga_rgb,		
+	
+	//user interface
+	output				vga_request,	//vga data request
+	output				vga_framesync,	//vga frame sync
+	output	[10:0]	vga_xpos,		//vga horizontal coordinate
+	output	[10:0]	vga_ypos,		//vga vertical coordinate
+	input		[15:0]	vga_data		//vga data
+);	  
+
+
+//-------------------------------------
+vga_driver u_vga_driver
+(
+	//global clock
+	.clk				(clk),		
+	.rst_n			(rst_n), 
+	 
+	 //vga interface
+	.vga_dclk		(vga_dclk),
+	.vga_blank		(vga_blank),
+	.vga_sync		(vga_sync),		    	
+	.vga_hs			(vga_hs),		
+	.vga_vs			(vga_vs),
+	.vga_en			(vga_en),		
+	.vga_rgb			(vga_rgb),	
+
+	
+	//user interface
+	.vga_request	(vga_request),
+	.vga_framesync	(vga_framesync),
+	.vga_data		(vga_data),	
+	.vga_xpos		(vga_xpos),	
+	.vga_ypos		(vga_ypos)
+);
+
+endmodule

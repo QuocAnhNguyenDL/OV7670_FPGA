@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[0]'
+Slack : -4.765
+TNS   : -225.642
+
+Type  : Slow Model Setup 'CMOS_PCLK'
+Slack : -0.596
+TNS   : -10.075
+
+Type  : Slow Model Setup 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[1]'
+Slack : 3.116
+TNS   : 0.000
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : 15.521
+TNS   : 0.000
+
+Type  : Slow Model Hold 'CMOS_PCLK'
+Slack : -2.356
+TNS   : -10.672
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[0]'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[1]'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'CMOS_PCLK'
+Slack : 1.552
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[1]'
+Slack : 3.569
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[0]'
+Slack : 5.894
+TNS   : 0.000
+
+Type  : Slow Model Removal 'CMOS_PCLK'
+Slack : -1.161
+TNS   : -35.606
+
+Type  : Slow Model Removal 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[0]'
+Slack : 1.781
+TNS   : 0.000
+
+Type  : Slow Model Removal 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[1]'
+Slack : 2.033
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CMOS_PCLK'
+Slack : -1.222
+TNS   : -34.222
+
+Type  : Slow Model Minimum Pulse Width 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[1]'
+Slack : 2.873
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.000
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[0]'
+Slack : 17.873
+TNS   : 0.000
+
+Type  : Fast Model Setup 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[0]'
+Slack : -1.931
+TNS   : -94.649
+
+Type  : Fast Model Setup 'CMOS_PCLK'
+Slack : 0.276
+TNS   : 0.000
+
+Type  : Fast Model Setup 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[1]'
+Slack : 6.921
+TNS   : 0.000
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : 17.920
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CMOS_PCLK'
+Slack : -1.394
+TNS   : -6.487
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[0]'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[1]'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'CMOS_PCLK'
+Slack : 1.453
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[1]'
+Slack : 4.217
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[0]'
+Slack : 7.896
+TNS   : 0.000
+
+Type  : Fast Model Removal 'CMOS_PCLK'
+Slack : -0.759
+TNS   : -23.464
+
+Type  : Fast Model Removal 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[0]'
+Slack : 0.929
+TNS   : 0.000
+
+Type  : Fast Model Removal 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[1]'
+Slack : 1.059
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CMOS_PCLK'
+Slack : -1.222
+TNS   : -34.222
+
+Type  : Fast Model Minimum Pulse Width 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[1]'
+Slack : 2.873
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.000
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'top|my_system_ctrl|u_sdram_pll|altpll_component|pll|clk[0]'
+Slack : 17.873
+TNS   : 0.000
+
+------------------------------------------------------------

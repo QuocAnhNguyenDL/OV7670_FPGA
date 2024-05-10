@@ -1,0 +1,106 @@
+`timescale 1ns / 1ps
+
+module sdram_top(
+		clk,
+		rst_n,
+		sdram_wr_req,
+		sdram_rd_req,
+		sdram_wr_ack,
+		sdram_rd_ack,
+		sys_wraddr,
+		sys_rdaddr,
+		sys_data_in,
+		sys_data_out,
+		sdwr_byte,
+		sdrd_byte,
+		sdram_cke,
+		sdram_cs_n,
+		sdram_ras_n,
+		sdram_cas_n,
+		sdram_we_n,
+		sdram_ba,
+		sdram_addr,
+		sdram_data,
+		sdram_init_done
+);
+
+input clk;		
+input rst_n;	
+
+input 				sdram_wr_req;			
+input 				sdram_rd_req;			
+output 				sdram_wr_ack;		
+output 				sdram_rd_ack;		
+input		[21:0] 	sys_wraddr;		
+input		[21:0]	sys_rdaddr;		
+input		[15:0] 	sys_data_in;	
+output	[15:0]	sys_data_out;	
+input		[8 :0] 	sdwr_byte;		
+input		[8 :0]	sdrd_byte;		
+output				sdram_init_done;	
+
+output 				sdram_cke;			
+output 				sdram_cs_n;		
+output 				sdram_ras_n;			
+output 				sdram_cas_n;			
+output 				sdram_we_n;			
+output	[1 :0] 	sdram_ba;		
+output	[11:0] 	sdram_addr;	
+inout		[15:0] 	sdram_data;		
+
+wire		[3 :0] 	init_state;	
+wire		[3 :0] 	work_state;	
+wire		[8 :0] 	cnt_clk;		
+wire 					sys_r_wn;			
+				
+sdram_ctrl		module_001
+(		
+		.clk					(clk					),						
+		.rst_n				(rst_n				),												
+		.sdram_wr_req		(sdram_wr_req		),
+		.sdram_rd_req		(sdram_rd_req		),
+		.sdram_wr_ack		(sdram_wr_ack		),
+		.sdram_rd_ack		(sdram_rd_ack		),
+		.sdwr_byte			(sdwr_byte			),
+		.sdrd_byte			(sdrd_byte			),							
+		.sdram_init_done	(sdram_init_done	),
+
+		.init_state			(init_state			),
+		.work_state			(work_state			),
+		.cnt_clk				(cnt_clk				),
+		.sys_r_wn			(sys_r_wn			)
+);
+
+sdram_cmd		module_002
+(	
+		.clk					(clk					),
+		.rst_n				(rst_n				),
+		.sdram_cke			(sdram_cke			),		
+		.sdram_cs_n			(sdram_cs_n			),	
+		.sdram_ras_n		(sdram_ras_n		),	
+		.sdram_cas_n		(sdram_cas_n		),	
+		.sdram_we_n			(sdram_we_n			),	
+		.sdram_ba			(sdram_ba			),			
+		.sdram_addr			(sdram_addr			),									
+		.sys_wraddr			(sys_wraddr			),	
+		.sys_rdaddr			(sys_rdaddr			),
+		.sdwr_byte			(sdwr_byte			),
+		.sdrd_byte			(sdrd_byte			),		
+		.init_state			(init_state			),	
+		.work_state			(work_state			),
+		.sys_r_wn			(sys_r_wn			),
+		.cnt_clk				(cnt_clk				)
+);
+
+sdram_wr_data	module_003
+(		
+		.clk					(clk					),
+		.rst_n				(rst_n				),
+		.sdram_data			(sdram_data			),
+		.sys_data_in		(sys_data_in		),
+		.sys_data_out		(sys_data_out		),
+		.work_state			(work_state			),	
+		.cnt_clk				(cnt_clk				)
+);
+endmodule
+

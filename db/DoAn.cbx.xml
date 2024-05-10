@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="DoAn">
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|rdfifo:u_rdfifo|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_5an1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|wrfifo:u_wrfifo|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_i9n1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
