@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DoAn
-Fri May 10 12:26:00 2024
+Sat May 18 10:15:40 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -61,15 +61,16 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  53. Parameter Settings for User Entity Instance: CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|wrfifo:u_wrfifo|dcfifo:dcfifo_component
  54. Parameter Settings for User Entity Instance: CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|rdfifo:u_rdfifo|dcfifo:dcfifo_component
  55. Parameter Settings for User Entity Instance: CAM_SDRAM_VGA:top|VGA:vga|vga_controller:vga
- 56. altpll Parameter Settings by Entity Instance
- 57. dcfifo Parameter Settings by Entity Instance
- 58. Port Connectivity Checks: "CAM_SDRAM_VGA:top|VGA:vga|vga_controller:vga"
- 59. Port Connectivity Checks: "CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top"
- 60. Port Connectivity Checks: "CAM_SDRAM_VGA:top|CAM:cam|CMOS_Capture:u_CMOS_Capture"
- 61. Port Connectivity Checks: "CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config|I2C_Controller:u_I2C_Controller"
- 62. Port Connectivity Checks: "CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config"
- 63. Elapsed Time Per Partition
- 64. Analysis & Synthesis Messages
+ 56. Parameter Settings for Inferred Entity Instance: Filter:filter|lpm_divide:Div0
+ 57. altpll Parameter Settings by Entity Instance
+ 58. dcfifo Parameter Settings by Entity Instance
+ 59. Port Connectivity Checks: "CAM_SDRAM_VGA:top|VGA:vga|vga_controller:vga"
+ 60. Port Connectivity Checks: "CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top"
+ 61. Port Connectivity Checks: "CAM_SDRAM_VGA:top|CAM:cam|CMOS_Capture:u_CMOS_Capture"
+ 62. Port Connectivity Checks: "CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config|I2C_Controller:u_I2C_Controller"
+ 63. Port Connectivity Checks: "CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config"
+ 64. Elapsed Time Per Partition
+ 65. Analysis & Synthesis Messages
 
 
 
@@ -95,13 +96,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri May 10 12:26:00 2024           ;
+; Analysis & Synthesis Status        ; Successful - Sat May 18 10:15:40 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; DoAn                                            ;
 ; Top-level Entity Name              ; top_level                                       ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 1,082                                           ;
-;     Total combinational functions  ; 935                                             ;
+; Total logic elements               ; 1,150                                           ;
+;     Total combinational functions  ; 1,003                                           ;
 ;     Dedicated logic registers      ; 469                                             ;
 ; Total registers                    ; 469                                             ;
 ; Total pins                         ; 123                                             ;
@@ -241,6 +242,7 @@ applicable agreement for further details.
 ; system_ctrl.v                    ; yes             ; User Verilog HDL File        ; D:/DoAn1/DoAn/system_ctrl.v                                           ;         ;
 ; CAM.v                            ; yes             ; User Verilog HDL File        ; D:/DoAn1/DoAn/CAM.v                                                   ;         ;
 ; CAM_SDRAM_VGA.v                  ; yes             ; User Verilog HDL File        ; D:/DoAn1/DoAn/CAM_SDRAM_VGA.v                                         ;         ;
+; Filter.v                         ; yes             ; User Verilog HDL File        ; D:/DoAn1/DoAn/Filter.v                                                ;         ;
 ; altpll.tdf                       ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf          ;         ;
 ; aglobal130.inc                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc      ;         ;
 ; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc     ;         ;
@@ -276,6 +278,14 @@ applicable agreement for further details.
 ; db/dffpipe_qe9.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/DoAn1/DoAn/db/dffpipe_qe9.tdf                                      ;         ;
 ; db/alt_synch_pipe_vd8.tdf        ; yes             ; Auto-Generated Megafunction  ; D:/DoAn1/DoAn/db/alt_synch_pipe_vd8.tdf                               ;         ;
 ; db/dffpipe_re9.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/DoAn1/DoAn/db/dffpipe_re9.tdf                                      ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; db/lpm_divide_vcm.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/DoAn1/DoAn/db/lpm_divide_vcm.tdf                                   ;         ;
+; db/sign_div_unsign_9kh.tdf       ; yes             ; Auto-Generated Megafunction  ; D:/DoAn1/DoAn/db/sign_div_unsign_9kh.tdf                              ;         ;
+; db/alt_u_div_kve.tdf             ; yes             ; Auto-Generated Megafunction  ; D:/DoAn1/DoAn/db/alt_u_div_kve.tdf                                    ;         ;
+; db/add_sub_lkc.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/DoAn1/DoAn/db/add_sub_lkc.tdf                                      ;         ;
+; db/add_sub_mkc.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/DoAn1/DoAn/db/add_sub_mkc.tdf                                      ;         ;
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------+---------+
 
 
@@ -284,17 +294,17 @@ applicable agreement for further details.
 +---------------------------------------------+--------------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                            ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 1,082                                                                                            ;
+; Estimated Total logic elements              ; 1,150                                                                                            ;
 ;                                             ;                                                                                                  ;
-; Total combinational functions               ; 935                                                                                              ;
+; Total combinational functions               ; 1003                                                                                             ;
 ; Logic element usage by number of LUT inputs ;                                                                                                  ;
-;     -- 4 input functions                    ; 554                                                                                              ;
-;     -- 3 input functions                    ; 159                                                                                              ;
-;     -- <=2 input functions                  ; 222                                                                                              ;
+;     -- 4 input functions                    ; 589                                                                                              ;
+;     -- 3 input functions                    ; 188                                                                                              ;
+;     -- <=2 input functions                  ; 226                                                                                              ;
 ;                                             ;                                                                                                  ;
 ; Logic elements by mode                      ;                                                                                                  ;
-;     -- normal mode                          ; 795                                                                                              ;
-;     -- arithmetic mode                      ; 140                                                                                              ;
+;     -- normal mode                          ; 835                                                                                              ;
+;     -- arithmetic mode                      ; 168                                                                                              ;
 ;                                             ;                                                                                                  ;
 ; Total registers                             ; 469                                                                                              ;
 ;     -- Dedicated logic registers            ; 469                                                                                              ;
@@ -308,7 +318,7 @@ applicable agreement for further details.
 ;                                             ;                                                                                                  ;
 ; Maximum fan-out node                        ; CAM_SDRAM_VGA:top|system_ctrl:my_system_ctrl|sdram_pll:u_sdram_pll|altpll:altpll_component|_clk0 ;
 ; Maximum fan-out                             ; 449                                                                                              ;
-; Total fan-out                               ; 5364                                                                                             ;
+; Total fan-out                               ; 5598                                                                                             ;
 ; Average fan-out                             ; 3.44                                                                                             ;
 +---------------------------------------------+--------------------------------------------------------------------------------------------------+
 
@@ -318,24 +328,24 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                               ; Library Name ;
 +-------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |top_level                                                        ; 935 (1)           ; 469 (0)      ; 16384       ; 0            ; 0       ; 0         ; 123  ; 0            ; |top_level                                                                                                                                                                                                                        ; work         ;
-;    |CAM_SDRAM_VGA:top|                                            ; 934 (0)           ; 469 (0)      ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top                                                                                                                                                                                                      ; work         ;
-;       |CAM:cam|                                                   ; 425 (0)           ; 81 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|CAM:cam                                                                                                                                                                                              ; work         ;
+; |top_level                                                        ; 1003 (1)          ; 469 (0)      ; 16384       ; 0            ; 0       ; 0         ; 123  ; 0            ; |top_level                                                                                                                                                                                                                        ; work         ;
+;    |CAM_SDRAM_VGA:top|                                            ; 929 (0)           ; 469 (0)      ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top                                                                                                                                                                                                      ; work         ;
+;       |CAM:cam|                                                   ; 420 (0)           ; 81 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|CAM:cam                                                                                                                                                                                              ; work         ;
 ;          |CMOS_Capture:u_CMOS_Capture|                            ; 21 (21)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|CAM:cam|CMOS_Capture:u_CMOS_Capture                                                                                                                                                                  ; work         ;
-;          |I2C_AV_Config:u_I2C_AV_Config|                          ; 404 (43)          ; 48 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config                                                                                                                                                                ; work         ;
-;             |I2C_Controller:u_I2C_Controller|                     ; 135 (135)         ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config|I2C_Controller:u_I2C_Controller                                                                                                                                ; work         ;
-;             |I2C_OV7670_RGB565_Config:u_I2C_OV7670_RGB565_Config| ; 226 (226)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config|I2C_OV7670_RGB565_Config:u_I2C_OV7670_RGB565_Config                                                                                                            ; work         ;
-;       |SDRAM_TOP:SDRAM|                                           ; 407 (0)           ; 341 (0)      ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM                                                                                                                                                                                      ; work         ;
+;          |I2C_AV_Config:u_I2C_AV_Config|                          ; 399 (43)          ; 48 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config                                                                                                                                                                ; work         ;
+;             |I2C_Controller:u_I2C_Controller|                     ; 123 (123)         ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config|I2C_Controller:u_I2C_Controller                                                                                                                                ; work         ;
+;             |I2C_OV7670_RGB565_Config:u_I2C_OV7670_RGB565_Config| ; 233 (233)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config|I2C_OV7670_RGB565_Config:u_I2C_OV7670_RGB565_Config                                                                                                            ; work         ;
+;       |SDRAM_TOP:SDRAM|                                           ; 408 (0)           ; 341 (0)      ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM                                                                                                                                                                                      ; work         ;
 ;          |sdbank_switch:u_sdbank_switch|                          ; 13 (13)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdbank_switch:u_sdbank_switch                                                                                                                                                        ; work         ;
-;          |sdram_2fifo_top:u_sdram_2fifo_top|                      ; 394 (0)           ; 325 (0)      ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top                                                                                                                                                    ; work         ;
-;             |SDRAM:u_sdram|                                       ; 169 (0)           ; 108 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|SDRAM:u_sdram                                                                                                                                      ; work         ;
+;          |sdram_2fifo_top:u_sdram_2fifo_top|                      ; 395 (0)           ; 325 (0)      ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top                                                                                                                                                    ; work         ;
+;             |SDRAM:u_sdram|                                       ; 170 (0)           ; 108 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|SDRAM:u_sdram                                                                                                                                      ; work         ;
 ;                |sdram_cmd:module_002|                             ; 55 (55)           ; 17 (17)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|SDRAM:u_sdram|sdram_cmd:module_002                                                                                                                 ; work         ;
-;                |sdram_ctrl:module_001|                            ; 111 (111)         ; 58 (58)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|SDRAM:u_sdram|sdram_ctrl:module_001                                                                                                                ; work         ;
+;                |sdram_ctrl:module_001|                            ; 112 (112)         ; 58 (58)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|SDRAM:u_sdram|sdram_ctrl:module_001                                                                                                                ; work         ;
 ;                |sdram_wr_data:module_003|                         ; 3 (3)             ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|SDRAM:u_sdram|sdram_wr_data:module_003                                                                                                             ; work         ;
 ;             |dcfifo_ctrl:u_dcfifo_ctrl|                           ; 225 (62)          ; 217 (41)     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl                                                                                                                          ; work         ;
 ;                |rdfifo:u_rdfifo|                                  ; 83 (0)            ; 88 (0)       ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|rdfifo:u_rdfifo                                                                                                          ; work         ;
 ;                   |dcfifo:dcfifo_component|                       ; 83 (0)            ; 88 (0)       ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|rdfifo:u_rdfifo|dcfifo:dcfifo_component                                                                                  ; work         ;
-;                      |dcfifo_5an1:auto_generated|                 ; 83 (17)           ; 88 (21)      ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|rdfifo:u_rdfifo|dcfifo:dcfifo_component|dcfifo_5an1:auto_generated                                                       ; work         ;
+;                      |dcfifo_5an1:auto_generated|                 ; 83 (18)           ; 88 (21)      ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|rdfifo:u_rdfifo|dcfifo:dcfifo_component|dcfifo_5an1:auto_generated                                                       ; work         ;
 ;                         |a_gray2bin_kdb:wrptr_g_gray2bin|         ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|rdfifo:u_rdfifo|dcfifo:dcfifo_component|dcfifo_5an1:auto_generated|a_gray2bin_kdb:wrptr_g_gray2bin                       ; work         ;
 ;                         |a_gray2bin_kdb:ws_dgrp_gray2bin|         ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|rdfifo:u_rdfifo|dcfifo:dcfifo_component|dcfifo_5an1:auto_generated|a_gray2bin_kdb:ws_dgrp_gray2bin                       ; work         ;
 ;                         |a_graycounter_egc:wrptr_gp|              ; 18 (18)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|rdfifo:u_rdfifo|dcfifo:dcfifo_component|dcfifo_5an1:auto_generated|a_graycounter_egc:wrptr_gp                            ; work         ;
@@ -346,7 +356,7 @@ applicable agreement for further details.
 ;                            |dffpipe_re9:dffpipe7|                 ; 0 (0)             ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|rdfifo:u_rdfifo|dcfifo:dcfifo_component|dcfifo_5an1:auto_generated|alt_synch_pipe_vd8:ws_dgrp|dffpipe_re9:dffpipe7       ; work         ;
 ;                         |altsyncram_1l81:fifo_ram|                ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|rdfifo:u_rdfifo|dcfifo:dcfifo_component|dcfifo_5an1:auto_generated|altsyncram_1l81:fifo_ram                              ; work         ;
 ;                            |altsyncram_drg1:altsyncram14|         ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|rdfifo:u_rdfifo|dcfifo:dcfifo_component|dcfifo_5an1:auto_generated|altsyncram_1l81:fifo_ram|altsyncram_drg1:altsyncram14 ; work         ;
-;                         |cmpr_536:rdempty_eq_comp|                ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|rdfifo:u_rdfifo|dcfifo:dcfifo_component|dcfifo_5an1:auto_generated|cmpr_536:rdempty_eq_comp                              ; work         ;
+;                         |cmpr_536:rdempty_eq_comp|                ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|rdfifo:u_rdfifo|dcfifo:dcfifo_component|dcfifo_5an1:auto_generated|cmpr_536:rdempty_eq_comp                              ; work         ;
 ;                         |cmpr_536:wrfull_eq_comp|                 ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|rdfifo:u_rdfifo|dcfifo:dcfifo_component|dcfifo_5an1:auto_generated|cmpr_536:wrfull_eq_comp                               ; work         ;
 ;                         |dffpipe_ngh:rdaclr|                      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|rdfifo:u_rdfifo|dcfifo:dcfifo_component|dcfifo_5an1:auto_generated|dffpipe_ngh:rdaclr                                    ; work         ;
 ;                         |dffpipe_oe9:ws_brp|                      ; 0 (0)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|rdfifo:u_rdfifo|dcfifo:dcfifo_component|dcfifo_5an1:auto_generated|dffpipe_oe9:ws_brp                                    ; work         ;
@@ -369,12 +379,17 @@ applicable agreement for further details.
 ;                         |dffpipe_kec:rs_brp|                      ; 0 (0)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|wrfifo:u_wrfifo|dcfifo:dcfifo_component|dcfifo_i9n1:auto_generated|dffpipe_kec:rs_brp                                    ; work         ;
 ;                         |dffpipe_kec:rs_bwp|                      ; 0 (0)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|wrfifo:u_wrfifo|dcfifo:dcfifo_component|dcfifo_i9n1:auto_generated|dffpipe_kec:rs_bwp                                    ; work         ;
 ;                         |dffpipe_ngh:rdaclr|                      ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|wrfifo:u_wrfifo|dcfifo:dcfifo_component|dcfifo_i9n1:auto_generated|dffpipe_ngh:rdaclr                                    ; work         ;
-;       |VGA:vga|                                                   ; 67 (0)            ; 22 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|VGA:vga                                                                                                                                                                                              ; work         ;
-;          |vga_controller:vga|                                     ; 67 (67)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|VGA:vga|vga_controller:vga                                                                                                                                                                           ; work         ;
+;       |VGA:vga|                                                   ; 66 (0)            ; 22 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|VGA:vga                                                                                                                                                                                              ; work         ;
+;          |vga_controller:vga|                                     ; 66 (66)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|VGA:vga|vga_controller:vga                                                                                                                                                                           ; work         ;
 ;       |system_ctrl:my_system_ctrl|                                ; 35 (7)            ; 25 (2)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|system_ctrl:my_system_ctrl                                                                                                                                                                           ; work         ;
 ;          |sdram_pll:u_sdram_pll|                                  ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|system_ctrl:my_system_ctrl|sdram_pll:u_sdram_pll                                                                                                                                                     ; work         ;
 ;             |altpll:altpll_component|                             ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|system_ctrl:my_system_ctrl|sdram_pll:u_sdram_pll|altpll:altpll_component                                                                                                                             ; work         ;
 ;          |system_delay:u_system_delay|                            ; 28 (28)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|CAM_SDRAM_VGA:top|system_ctrl:my_system_ctrl|system_delay:u_system_delay                                                                                                                                               ; work         ;
+;    |Filter:filter|                                                ; 73 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|Filter:filter                                                                                                                                                                                                          ; work         ;
+;       |lpm_divide:Div0|                                           ; 41 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|Filter:filter|lpm_divide:Div0                                                                                                                                                                                          ; work         ;
+;          |lpm_divide_vcm:auto_generated|                          ; 41 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|Filter:filter|lpm_divide:Div0|lpm_divide_vcm:auto_generated                                                                                                                                                            ; work         ;
+;             |sign_div_unsign_9kh:divider|                         ; 41 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|Filter:filter|lpm_divide:Div0|lpm_divide_vcm:auto_generated|sign_div_unsign_9kh:divider                                                                                                                                ; work         ;
+;                |alt_u_div_kve:divider|                            ; 41 (41)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|Filter:filter|lpm_divide:Div0|lpm_divide_vcm:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_kve:divider                                                                                                          ; work         ;
 +-------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -559,8 +574,8 @@ Encoding Type:  One-Hot
 ; CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config|I2C_Controller:u_I2C_Controller|SCLK                                                                                                               ; 4       ;
 ; CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config|I2C_Controller:u_I2C_Controller|ACKR1                                                                                                              ; 3       ;
 ; CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config|I2C_Controller:u_I2C_Controller|ACKR2                                                                                                              ; 3       ;
-; CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config|I2C_Controller:u_I2C_Controller|ACKR3                                                                                                              ; 3       ;
-; CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config|I2C_Controller:u_I2C_Controller|ACKW1                                                                                                              ; 2       ;
+; CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config|I2C_Controller:u_I2C_Controller|ACKR3                                                                                                              ; 2       ;
+; CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config|I2C_Controller:u_I2C_Controller|ACKW1                                                                                                              ; 3       ;
 ; CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config|I2C_Controller:u_I2C_Controller|ACKW2                                                                                                              ; 3       ;
 ; CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config|I2C_Controller:u_I2C_Controller|ACKW3                                                                                                              ; 2       ;
 ; CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config|I2C_Controller:u_I2C_Controller|I2C_BIT                                                                                                            ; 8       ;
@@ -573,23 +588,24 @@ Encoding Type:  One-Hot
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_level|CAM_SDRAM_VGA:top|CAM:cam|CMOS_Capture:u_CMOS_Capture|Pre_CMOS_iDATA[1]                                                 ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top_level|CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config|I2C_Controller:u_I2C_Controller|SD_COUNTER[1]                   ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|sdram_wraddr[8]           ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|sdram_wraddr[21]          ;
-; 16:1               ; 2 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|SDRAM:u_sdram|sdram_cmd:module_002|sdram_cmd_r[1]   ;
-; 5:1                ; 12 bits   ; 36 LEs        ; 12 LEs               ; 24 LEs                 ; Yes        ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|sdram_rdaddr[8]           ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 2 LEs                ; 4 LEs                  ; Yes        ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|sdram_rdaddr[21]          ;
-; 20:1               ; 5 bits    ; 65 LEs        ; 20 LEs               ; 45 LEs                 ; Yes        ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|SDRAM:u_sdram|sdram_cmd:module_002|sdram_addr_r[5]  ;
-; 32:1               ; 2 bits    ; 42 LEs        ; 8 LEs                ; 34 LEs                 ; Yes        ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|SDRAM:u_sdram|sdram_cmd:module_002|sdram_ba_r[0]    ;
-; 34:1               ; 7 bits    ; 154 LEs       ; 56 LEs               ; 98 LEs                 ; Yes        ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|SDRAM:u_sdram|sdram_cmd:module_002|sdram_addr_r[11] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|SDRAM:u_sdram|sdram_ctrl:module_001|work_state_r    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_level|CAM_SDRAM_VGA:top|CAM:cam|CMOS_Capture:u_CMOS_Capture|Pre_CMOS_iDATA[0]                                                ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |top_level|CAM_SDRAM_VGA:top|CAM:cam|I2C_AV_Config:u_I2C_AV_Config|I2C_Controller:u_I2C_Controller|SD_COUNTER[5]                  ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|sdram_wraddr[16]         ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|sdram_wraddr[20]         ;
+; 16:1               ; 2 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|SDRAM:u_sdram|sdram_cmd:module_002|sdram_cmd_r[2]  ;
+; 5:1                ; 12 bits   ; 36 LEs        ; 12 LEs               ; 24 LEs                 ; Yes        ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|sdram_rdaddr[8]          ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 2 LEs                ; 4 LEs                  ; Yes        ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|dcfifo_ctrl:u_dcfifo_ctrl|sdram_rdaddr[20]         ;
+; 20:1               ; 5 bits    ; 65 LEs        ; 20 LEs               ; 45 LEs                 ; Yes        ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|SDRAM:u_sdram|sdram_cmd:module_002|sdram_addr_r[0] ;
+; 32:1               ; 2 bits    ; 42 LEs        ; 8 LEs                ; 34 LEs                 ; Yes        ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|SDRAM:u_sdram|sdram_cmd:module_002|sdram_ba_r[1]   ;
+; 34:1               ; 7 bits    ; 154 LEs       ; 56 LEs               ; 98 LEs                 ; Yes        ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|SDRAM:u_sdram|sdram_cmd:module_002|sdram_addr_r[3] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |top_level|CAM_SDRAM_VGA:top|SDRAM_TOP:SDRAM|sdram_2fifo_top:u_sdram_2fifo_top|SDRAM:u_sdram|sdram_ctrl:module_001|work_state_r   ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |top_level|Filter:filter|R[8]                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1353,6 +1369,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++--------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Filter:filter|lpm_divide:Div0 ;
++------------------------+----------------+--------------------------------------+
+; Parameter Name         ; Value          ; Type                                 ;
++------------------------+----------------+--------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                              ;
+; LPM_WIDTHD             ; 2              ; Untyped                              ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                              ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                              ;
+; LPM_PIPELINE           ; 0              ; Untyped                              ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                              ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                              ;
+; CBXI_PARAMETER         ; lpm_divide_vcm ; Untyped                              ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                              ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                              ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                         ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                       ;
++------------------------+----------------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------------------------------------------------------------------------+
 ; altpll Parameter Settings by Entity Instance                                                                               ;
 +-------------------------------+--------------------------------------------------------------------------------------------+
@@ -1469,7 +1508,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -1479,7 +1518,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri May 10 12:25:54 2024
+    Info: Processing started: Sat May 18 10:15:33 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DoAn -c DoAn
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file dcfifo_ctrl.v
@@ -1528,6 +1567,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file cam.v
     Info (12023): Found entity 1: CAM
 Info (12021): Found 1 design units, including 1 entities, in source file cam_sdram_vga.v
     Info (12023): Found entity 1: CAM_SDRAM_VGA
+Info (12021): Found 1 design units, including 1 entities, in source file filter.v
+    Info (12023): Found entity 1: Filter
 Warning (10236): Verilog HDL Implicit Net warning at CMOS_Capture.v(26): created implicit net for "CMOS_RST_N"
 Warning (10236): Verilog HDL Implicit Net warning at CMOS_Capture.v(27): created implicit net for "CMOS_PWDN"
 Warning (10236): Verilog HDL Implicit Net warning at CAM.v(32): created implicit net for "Config_Done"
@@ -1715,6 +1756,29 @@ Info (12128): Elaborating entity "VGA" for hierarchy "CAM_SDRAM_VGA:top|VGA:vga"
 Info (12128): Elaborating entity "vga_controller" for hierarchy "CAM_SDRAM_VGA:top|VGA:vga|vga_controller:vga"
 Warning (10230): Verilog HDL assignment warning at vga_controller.v(67): truncated value with size 32 to match size of target (11)
 Warning (10230): Verilog HDL assignment warning at vga_controller.v(68): truncated value with size 32 to match size of target (11)
+Info (12128): Elaborating entity "Filter" for hierarchy "Filter:filter"
+Warning (10230): Verilog HDL assignment warning at Filter.v(14): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at Filter.v(28): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at Filter.v(29): truncated value with size 32 to match size of target (10)
+Warning (10230): Verilog HDL assignment warning at Filter.v(30): truncated value with size 32 to match size of target (10)
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Filter:filter|Div0"
+Info (12130): Elaborated megafunction instantiation "Filter:filter|lpm_divide:Div0"
+Info (12133): Instantiated megafunction "Filter:filter|lpm_divide:Div0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "2"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_vcm.tdf
+    Info (12023): Found entity 1: lpm_divide_vcm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_9kh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_kve.tdf
+    Info (12023): Found entity 1: alt_u_div_kve
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_lkc.tdf
+    Info (12023): Found entity 1: add_sub_lkc
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
+    Info (12023): Found entity 1: add_sub_mkc
 Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
@@ -1723,28 +1787,12 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "DRAM_CS_N" is stuck at GND
     Warning (13410): Pin "DRAM_DQM[0]" is stuck at GND
     Warning (13410): Pin "DRAM_DQM[1]" is stuck at GND
-    Warning (13410): Pin "VGA_R[0]" is stuck at GND
-    Warning (13410): Pin "VGA_R[1]" is stuck at GND
-    Warning (13410): Pin "VGA_R[2]" is stuck at GND
-    Warning (13410): Pin "VGA_R[3]" is stuck at GND
-    Warning (13410): Pin "VGA_R[4]" is stuck at GND
-    Warning (13410): Pin "VGA_G[0]" is stuck at GND
-    Warning (13410): Pin "VGA_G[1]" is stuck at GND
-    Warning (13410): Pin "VGA_G[2]" is stuck at GND
-    Warning (13410): Pin "VGA_G[3]" is stuck at GND
-    Warning (13410): Pin "VGA_B[0]" is stuck at GND
-    Warning (13410): Pin "VGA_B[1]" is stuck at GND
-    Warning (13410): Pin "VGA_B[2]" is stuck at GND
-    Warning (13410): Pin "VGA_B[3]" is stuck at GND
-    Warning (13410): Pin "VGA_B[4]" is stuck at GND
     Warning (13410): Pin "LEDR[16]" is stuck at GND
     Warning (13410): Pin "LEDR[17]" is stuck at GND
 Info (17049): 16 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 18 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[0]"
-    Warning (15610): No output dependent on input pin "SW[1]"
+Warning (21074): Design contains 16 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[2]"
     Warning (15610): No output dependent on input pin "SW[3]"
     Warning (15610): No output dependent on input pin "SW[4]"
@@ -1761,17 +1809,17 @@ Warning (21074): Design contains 18 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[15]"
     Warning (15610): No output dependent on input pin "SW[16]"
     Warning (15610): No output dependent on input pin "SW[17]"
-Info (21057): Implemented 1258 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1326 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 30 input pins
     Info (21059): Implemented 76 output pins
     Info (21060): Implemented 17 bidirectional pins
-    Info (21061): Implemented 1102 logic cells
+    Info (21061): Implemented 1170 logic cells
     Info (21064): Implemented 32 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 53 warnings
-    Info: Peak virtual memory: 4638 megabytes
-    Info: Processing ended: Fri May 10 12:26:00 2024
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:02
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 41 warnings
+    Info: Peak virtual memory: 4643 megabytes
+    Info: Processing ended: Sat May 18 10:15:41 2024
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:03
 
 

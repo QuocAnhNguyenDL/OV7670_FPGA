@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Fri May 10 12:26:00 2024
+Analysis & Synthesis Status : Successful - Sat May 18 10:15:40 2024
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : DoAn
 Top-level Entity Name : top_level
 Family : Cyclone II
-Total logic elements : 1,082
-    Total combinational functions : 935
+Total logic elements : 1,150
+    Total combinational functions : 1,003
     Dedicated logic registers : 469
 Total registers : 469
 Total pins : 123

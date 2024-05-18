@@ -41,9 +41,11 @@ module top_level
 wire [15:0] VGAD;
 wire CLOCK_25;
 
+/*
 assign VGA_R = {VGAD[15:11],5'b00000};		
 assign VGA_G = {VGAD[10:5],4'b0000};
-assign VGA_B = {VGAD[4:0],5'b00000};
+assign VGA_B = {VGAD[4:0],5'b00000};*/
+
 assign LEDR[15:0] = VGAD;
 
 CAM_SDRAM_VGA top
@@ -79,5 +81,14 @@ CAM_SDRAM_VGA top
 	.VGA_CLK(VGA_CLK)
 );
 
+Filter filter
+(
+	.VGAD(VGAD),
+	.select(SW[1:0]),
+	
+	.R(VGA_R),
+	.G(VGA_G),
+	.B(VGA_B)
+);
 
 endmodule
